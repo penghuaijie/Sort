@@ -11,21 +11,20 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        int a[] = {1,3,2,6,5,4};
+        int a[10] = {10,9,8,7,6,5,4,3,2,1};
         int count = sizeof(a)/sizeof(int);
-        int temp ;
-        for (NSInteger i = 0; i < count-1; i++) {//比较n-1轮
-            for (NSInteger j = 0; j < count-1-i; j++) {
-                if (a[j]<a[j+1]) {
-                    temp = a[j+1];
-                    a[j+1] = a[j];
-                    a[j] = temp;
+        
+        for (int i = 0; i < count; i++) {
+            for (int j = 0; j < count-1-i; j++) {
+                if (a[j]>a[j+1]) {
+                    int temp = a[j];
+                    a[j] = a[j+1];
+                    a[j+1] = temp;
                 }
             }
         }
-        for (int i=0; i<count; ++i)
-        {
-            printf("%d\x20", a[i]);
+        for (int i = 0; i < count; i++) {
+            NSLog(@"%d ",a[i]);
         }
         printf("\n");
     }

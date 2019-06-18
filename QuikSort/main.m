@@ -40,48 +40,11 @@ void QS(int arr[], int low, int high) {
         QS(arr, base+1, high);
     }
 }
-//
-//void Swap(int arr[], int low, int high)
-//{
-//    int temp;
-//    temp = arr[low];
-//    arr[low] = arr[high];
-//    arr[high] = temp;
-//}
-
-//int Partition(int arr[], int low, int high)
-//{
-//    int base = arr[low];
-//    while(low < high)
-//    {
-//        while(low < high && arr[high] >= base)
-//        {
-//            high --;
-//        }
-//        Swap(arr, low, high);
-//        while(low < high && arr[low] <= base)
-//        {
-//            low ++;
-//        }
-//        Swap(arr, low, high);
-//    }
-//    return low;
-//}
-
-//void QuickSort(int arr[], int low, int high)
-//{
-//    if(low < high)
-//    {
-//        int base = Partition(arr, low, high);
-//        QuickSort(arr, low, base - 1);
-//        QuickSort(arr, base + 1, high);
-//    }
-//}
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        int a[] = {2,1,3,5,4,6,8,9,5,0,2,1,7};
+        int a[10] = {10,9,8,7,6,5,4,3,2,1};
         int count = sizeof(a)/sizeof(int);
         QS(a, 0, count-1);
         for (int i=0; i<count; ++i)

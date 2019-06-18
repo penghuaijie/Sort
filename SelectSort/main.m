@@ -10,7 +10,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        int a[] = {10,9,8,7,6,5,4,3,2,1,0};
+        int a[10] = {10,9,8,7,6,5,4,3,2,1};
         int count = sizeof(a)/sizeof(int);
         //选择排序
         for (int i = 0; i < count; i++) {
