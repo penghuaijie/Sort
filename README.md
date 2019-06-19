@@ -10,5 +10,5 @@
 重复步骤1~3，直到排序完成  
 
 图解：  
-！[Image Text]()
+！[Image Text](https://github.com/penghuaijie/Sort/blob/master/GifAndImage/140153i7562exzjrnagaja%20(1).gif)
 
