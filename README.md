@@ -9,6 +9,7 @@
 针对所有的元素重复以上的步骤，除了最后一个；  
 重复步骤1~3，直到排序完成  
 
-图解：  
-！[Image Text](https://github.com/penghuaijie/Sort/blob/master/GifAndImage/140153i7562exzjrnagaja%20(1).gif)
+
+动图演示：  
+![Image text](https://github.com/penghuaijie/Sort/blob/master/GifAndImage/140153i7562exzjrnagaja%20(1).gif)
 
